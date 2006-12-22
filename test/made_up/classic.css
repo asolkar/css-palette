@@ -1,0 +1,345 @@
+body
+{
+  font-family : "Trebuchet MS", "Verdana", Sans-Serif;
+  font-size : 13px;
+}
+
+a, a:visited
+{
+  color : #773000;
+  background-color : #eeeeee;
+  text-decoration : none;
+}
+a:hover
+{
+  color : #cc7100;
+  text-decoration : underline;
+}
+
+/* Page positioning */
+
+#OuterWrapper
+{
+  display : block;
+  margin : 0 auto;
+  max-width : 750px;
+  text-align : center;
+  padding 0px;
+  background : url(images/back.png) no-repeat top right fixed;
+  overflow : hidden;
+}
+
+#Wrapper
+{
+  display : block;
+  margin : 0 auto;
+  padding : 0px 0px 0px 0px;
+  min-width : 450px;
+  max-width : 100%;
+  text-align : justify;
+}
+
+#BannerText
+{
+  font-size : 36px;
+  font-weight : bold;
+  margin : 5px 40px 15px 70px;
+  text-align : left;
+}
+
+.SectionHead
+{
+  /*border-bottom : thin dotted #777777;*/
+  border-bottom : 1px solid #cccccc;
+  border-left : 5px solid #cccccc;
+  padding-left : 5px;
+  padding-bottom : 2px;
+  margin-bottom : 5px;
+  -moz-border-radius: 0px 0px 0px 10px;
+  color : #cc6100;
+  font-size : 16px;
+  font-weight : bold;
+}
+
+.Section
+{
+  overflow : hidden;
+}
+
+#MainContent
+{
+  z-index : 1000;
+  position : relative;
+  line-height : 1.7em;
+  margin : 5px 35px 5px 70px;
+  background : white;
+  opacity : 1;
+  padding : 10px 10px 10px 10px;
+  border : solid 2px #aabbaa;
+  -moz-border-radius: 10px 10px 10px 10px;
+}
+#MainContent pre
+{
+  line-height : 1.2em;
+}
+
+#MenuSpace
+{
+  position : absolute !important;
+  z-index : 3;
+  line-height : .7em;
+  margin : 35px 5px 5px 30px;
+  background : #aabbaa;
+  padding : 5px 5px 5px 5px;
+  border : solid 2px #aabbaa;
+  float : left;
+  width : 40px;
+  -moz-border-radius: 10px 0px 0px 10px;
+  /*opacity : 0.9;*/
+}
+#MenuSpace > ul
+{
+  margin-left : 2em;
+  display : none;
+}
+
+#MenuSpace:hover > ul
+{
+  visibility : visible;
+  display : block;
+}
+#MenuSpace:hover
+{
+  z-index : 3000;
+  border : solid 2px #778877;
+  width : 12em;
+}
+
+#MenuSpace li
+{
+  list-style : none;
+}
+#MenuSpace li:hover
+{
+  background-color : #b4c4b4;
+}
+
+#MenuSpace ul
+{
+  float : bottom;
+  list-style : inside;
+  text-align : left;
+  padding-left : 1em;
+}
+
+#MenuSpace a
+{
+  background : transparent;
+  margin : 0px 0px 0px 0px;
+  padding : 0px 0px 0px 8px;
+  text-decoration : none;
+  color : black;
+  border : 0px 0px 0px 0px;
+  border-left : solid 3px transparent;
+  display : block;
+}
+#MenuSpace .SubMenu
+{
+  font-weight : bold
+}
+
+#MenuSpace a:hover,
+#MenuSpace a.SubMenu:hover,
+#MenuSpace p:hover,
+#MenuSpace p.SubMenu:hover
+{
+  border-left : solid 3px #ffffff;
+}
+
+/* Hierarchy */
+
+.TopMenu *
+{
+  line-height : 1em;
+}
+
+.TopMenu li
+{
+  list-style : none;
+  position : relative;
+  padding : 7px 0px 7px 2px;
+}
+.TopMenu p
+{
+  padding : 0px 0px 0px 10px;
+  margin : 0px 0px 0px 0px;
+  border : 0px 0px 0px 0px;
+  border-left : solid 3px transparent;
+}
+
+
+#MenuSpace > ul
+{
+  float : bottom;
+  text-align : left;
+  margin : 5px 0px 5px 15px;
+}
+#MenuSpace ul ul
+{
+  display : none;
+  border : solid 2px #778877;
+  background-color : #aabbaa;
+}
+
+#MenuSpace ul li:hover > ul
+{
+  display : block;
+  position : absolute;
+  width : 100%;
+  left : 90%;
+  top : 5px;
+}
+
+#MenuExpand
+{
+  float : top left;
+  position : relative;
+  color : #778877;
+  font-size : 36px;
+  font-weight : bold;
+  margin : 2px 2px 10px 2px;
+}
+
+#FootNotes
+{
+  font-size : 10px;
+  text-align : center;
+}
+
+/* Template requirements */
+table
+{
+  font-size : 11px;
+}
+th
+{
+  text-align : left;
+}
+
+tr:first-child
+{
+  background-color : #FFFFFF;
+}
+tr[background-color="#ffffff"] + tr
+{
+  background-color : #eeeeee;
+}
+tr[background-color="#eeeeee"] + tr
+{
+  background-color : #ffffff;
+}
+
+
+/* Modifer classes */
+.fade
+{
+  color : #cccccc;
+}
+
+.failure
+{
+  color : #cc0000;
+}
+
+.success
+{
+  color : #00cc00;
+}
+
+/* Calendar display */
+.legendTd
+{
+  font-size : 11px;
+  border: thin solid #cccccc;
+}
+.legendTh
+{
+  font-size : 11px;
+  border: thin solid #777777;
+}
+
+.tabHeading
+{
+    color: #104e8b;
+    font-weight: bold;
+}
+
+a.tabHeading
+{
+    background-color: #104e8b;
+    font-weight: bold;
+}
+
+a.tabHeading:hover
+{
+    color: #cccccc;
+    background-color: #104e8b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.calToday
+{
+  font-size : 11px;
+  background-color: #eeffdd;
+  border: thin solid #cccccc;
+}
+.calSnpsHoliday
+{
+  font-size : 11px;
+  background-color: #ffddff;
+  border: thin solid #cccccc;
+}
+.calWeekend
+{
+  font-size : 11px;
+  background-color: #eeeeee;
+  border: thin solid #cccccc;
+}
+/* PCIE Ski specific styles */
+
+.pcie_ski_nav
+{
+  text-align : right;
+  margin : 3px 3px 7px 3px;
+}
+
+.pcie_ski_nav .disable
+{
+  color : #dddddd;
+}
+img
+{
+  opacity : 1 !important;
+}
+#fpage_pic
+{
+  float : right;
+  border : thin solid #dddddd;
+  margin : 2px 2px 2px 10px;
+  padding : 2px;
+}
+.pcap
+{
+  font-size : 10px;
+  text-align : center;
+}
+.punch_line
+{
+  font-weight : bold;
+}
+
+.dummy_css2
+{
+  color: WindowText; background-color: Window;
+}
