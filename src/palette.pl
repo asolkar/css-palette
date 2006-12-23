@@ -1,5 +1,10 @@
 #!/usr/bin/perl
 
+#
+# Concept : http://alanjstr.blogspot.com/2006/11/grepping-css.html
+# Author  : Mahesh Asolkar <asolkar@gmail.com>
+#
+
 use strict;
 use warnings;
 
@@ -8,7 +13,7 @@ use File::Find;
 use Getopt::Long;
 
 my $ext = "css"; # Default extension
-my $src = "."; # Default source. File or directory
+my $src = ".";   # Default source. File or directory
 my $correct_usage = GetOptions ('ext=s' => \$ext, 'src=s' => \$src);
 
 unless ($correct_usage) {
